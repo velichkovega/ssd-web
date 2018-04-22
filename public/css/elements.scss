@@ -1,0 +1,302 @@
+.js-data-content {
+  opacity: 0;
+}
+
+.section-list {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  text-transform: uppercase;
+  margin-top: -40px;
+  -webkit-transition: margin-top 1s;
+  .section-body {
+    position: relative;
+  }
+  .section {
+    margin: 20px 0;
+    display: flex;
+    position: relative;
+    -webkit-transition: opacity 1s;
+    flex-direction: row-reverse;
+  }
+}
+
+.section .title {
+  display: none;
+  opacity: 0;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: 600;
+  margin-right: 12px;
+  padding-left: 4px;
+}
+
+.section-list .section {
+  .num {
+    width: 35px;
+    margin-right: 28px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  &[js-step="0"] {
+    opacity: 1;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    -webkit-transition: width 0s;
+    bottom: -10px;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background-color: #e1001c;
+  }
+  &[js-step="0"]:before {
+    -webkit-transition: width .5s;
+    width: 100%;
+  }
+  &[js-step="1"] {
+    opacity: .6;
+  }
+  &[js-step="2"] {
+    opacity: .4;
+  }
+  &[js-step="3"] {
+    opacity: .2;
+  }
+  &[js-step="4"] {
+    opacity: .1;
+  }
+}
+
+.section[js-step="0"] .title {
+  display: inline-block;
+  animation-delay: 0s;
+  animation-duration: 1s;
+  animation-name: opacityOut;
+  animation-fill-mode: forwards;
+}
+
+.section3 {
+  .container {
+    text-align: center;
+  }
+  .team-slider {
+    height: 560px;
+    width: 328px;
+    display: -webkit-inline-flex;
+    display: -moz-inline-flex;
+    display: -ms-inline-flex;
+    display: -o-inline-flex;
+    display: inline-flex;
+    ul {
+      width: 100%;
+    }
+    li {
+      width: 100%;
+      span {
+        position: absolute;
+        display: none;
+      }
+      .team-name {
+        top: 0;
+        font-size: 24px;
+        font-weight: 600;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+      .team-position {
+        top: 40px;
+        font-size: 20px;
+        font-weight: 600;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+      .team-quote {
+        bottom: 0;
+        font-size: 24px;
+        left: 0;
+        right: 0;
+        line-height: 28px;
+        font-style: italic;
+        text-align: center;
+      }
+    }
+    img {
+      opacity: 1 !important;
+      border: solid 1px #979797;
+      border-radius: 5px;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      transition: filter .3s;
+    }
+    li {
+      &.shadow img {
+        box-shadow: 0 0 24px 28px rgba(0, 0, 0, 0.5);
+      }
+      &.active span {
+        display: block;
+      }
+    }
+    img.active {
+      filter: grayscale(0%);
+      -webkit-filter: grayscale(0%);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section3 .team-slider {
+    width: 280px;
+  }
+  .section-list {
+    position: fixed;
+    top: 70px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-top: 0 !important;
+    display: none;
+    .section-body {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+    .section {
+      opacity: 1 !important;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      margin: 0;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      width: 30px;
+      &.active {
+        display: inline-flex;
+      }
+      &:before {
+        width: 1px;
+        background-color: #fff;
+      }
+      .title {
+        opacity: 1 !important;
+        animation-name: none;
+        transform: rotate(90deg);
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        position: absolute;
+        &:before {
+          height: 1px;
+          width: 100%;
+          background-color: #e1001c;
+          content: "";
+        }
+      }
+      .num {
+        width: auto;
+        margin-right: 0;
+        font-size: 14px;
+        width: 30px;
+        margin-top: -60px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1399px) {
+  .section3 .team-slider {
+    height: 440px;
+    margin-top: -50px;
+  }
+  .team-slider img {
+    height: 300px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .section .title {
+    display: none !important;
+  }
+}
+
+.mobile-section {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  right: 10px;
+  width: 20px;
+  z-index: 20;
+}
+
+.mobile-section__content {
+  position: absolute;
+  top: 100px;
+  .number {
+    font-weight: 600;
+    letter-spacing: .4px;
+    color: #fff;
+    font-size: 14px;
+  }
+  .title {
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: .3px;
+    writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    border-left: 1px solid #e1001c;
+    display: block !important;
+    opacity: 1 !important;
+    padding: 0;
+    margin: 0;
+    line-height: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1px;
+    background-color: #fff;
+    height: 100000%;
+  }
+  &:before {
+    bottom: calc(100% + 10px);
+  }
+  &:after {
+    top: calc(100% + 10px);
+  }
+}
+
+.footer {
+  z-index: 21;
+}
+
+.section[js-data-id="1"] .mobile-section__content:before {
+  content: none;
+}
+
+#content {
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  overflow: hidden;
+}
