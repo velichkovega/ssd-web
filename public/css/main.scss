@@ -3423,3 +3423,46 @@ button.swiper-pagination-bullet {
     left: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .start {
+    h1 {
+      font-size: 48px;
+      text-align: center;
+    }
+    .anons {
+      font-size: 24px;
+      width: 567px;
+      text-align: left;
+      margin: auto;
+    }
+    .button {
+      padding-left: 11%;
+    }
+    .application {
+      padding-left: 11%;
+    }
+  }
+
+  .benefits {
+    .slogan {
+      padding-top: 90px;
+    }
+  }
+
+  .device-title {
+    padding-left: 4%;
+    text-align: left;
+  }
+
+  .news {
+    padding-top: 236px;
+  }
+
+  .news-left {
+    h2 {
+      top: 139px;
+    }
+  }
+
+}
