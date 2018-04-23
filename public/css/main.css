@@ -24,4 +24,27 @@
     color: #e1001c; }
 
 .support-sales {
-  padding-top: 172px; }
+  padding-top: 172px;
+  padding-left: 155px; }
+
+.support-sales__item {
+  display: -ms-flexbox;
+  display: flex; }
+
+.support__title {
+  font-size: 18px;
+  color: #ffffff; }
+
+.item-text__wrap {
+  margin-top: 26px; }
+
+.support__sub-title {
+  width: 241px;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.4px;
+  text-align: left;
+  color: #e1001c; }
