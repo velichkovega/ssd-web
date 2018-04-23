@@ -3466,3 +3466,35 @@ button.swiper-pagination-bullet {
   }
 
 }
+
+@media (max-width: 480px) {
+  .container {
+    overflow: visible;
+    padding: 0 35px 40px 35px;
+  }
+
+  .news {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .start {
+    h1 {
+      padding-left: 0px;
+      font-size: 20px;
+    }
+    .anons {
+      padding-top: 10px;
+      width: 100%;
+      font-size: 14px;
+      text-align: center;
+    }
+    .button {
+      padding: 0px;
+    }
+    .application {
+      padding-left: 0px;
+    }
+  }
+}

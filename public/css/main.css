@@ -3063,3 +3063,26 @@ button.swiper-pagination-bullet {
     padding-top: 236px; }
   .news-left h2 {
     top: 139px; } }
+
+@media (max-width: 480px) {
+  .container {
+    overflow: visible;
+    padding: 0 35px 40px 35px; }
+  .news {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .start h1 {
+    padding-left: 0px;
+    font-size: 20px; }
+  .start .anons {
+    padding-top: 10px;
+    width: 100%;
+    font-size: 14px;
+    text-align: center; }
+  .start .button {
+    padding: 0px; }
+  .start .application {
+    padding-left: 0px; } }
