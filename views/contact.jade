@@ -3,20 +3,21 @@ html(lang='en')
   head
     include includes/head
     link(rel='stylesheet', href='css/main.css')
-  body
+    link(rel='stylesheet', href='css/support.css')
+  body.support-body
     include includes/header 
-    .wrap
+    .container-support
       .support-container
         .support-left
           h1 SUPPORT
           .support-sales
             .support-sales__item
-              img(src="/")
+              img(src="img/icon.png")
               .item-text__wrap
                 p.support__title SUPPORT
                 p.support__sub-title support@secureswissdata.com
             .support-sales__item
-              img(src="/")
+              img(src="img/icon.png")
               .item-text__wrap
                 p.support__title SALES 
                 p.support__sub-title sales@secureswissdata.com
@@ -24,7 +25,13 @@ html(lang='en')
           .support-right__form
             p.support-form__title Enquiry Form
             p.support-form__sub-title Haven’t found an answer to your issue in FAQ? Contact Support via email or the form below.
-
+            from.support-form 
+              input(type="text" placeholder="Name *")
+              input(type="text" placeholder="Email *")
+              input(type="text" placeholder="Subject")
+              textarea(type="text" placeholder="Message *")
+              button(type="button" value="SUBMIT") SUBMIT
+                
 
 
     include includes/footer

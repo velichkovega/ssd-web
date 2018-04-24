@@ -3,8 +3,7 @@
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-top: 10%; }
+      justify-content: space-between; }
 
 .support-left {
   display: -ms-flexbox;
@@ -24,8 +23,8 @@
     color: #e1001c; }
 
 .support-sales {
-  padding-top: 172px;
-  padding-left: 155px; }
+  padding-top: 158px;
+  padding-left: 113px; }
 
 .support-sales__item {
   display: -ms-flexbox;
@@ -35,8 +34,7 @@
   font-size: 18px;
   color: #ffffff; }
 
-.item-text__wrap {
-  margin-top: 26px; }
+
 
 .support__sub-title {
   width: 241px;
