@@ -88,6 +88,7 @@
 }
 
 .email-container {
+    position: relative;
     padding-left: 128px;
     margin-top: 176px;
 }
@@ -220,8 +221,24 @@
     background: transparent;
 }
 
+.email-monitor {
+    position: absolute;
+    width: 962px;
+    height: 770px;
+    right: 125px;
+    top: 85px;
+}
+
 
 @media (max-width: 1440px) {
+    .email-monitor {
+        position: absolute;
+        width: 862px;
+        height: 670px;
+        right: 0;
+        top: 158px;
+    }
+
     .search-file {
         margin-top: 84px;
     }
@@ -235,9 +252,29 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .email-monitor {
+        position: absolute;
+        width: 662px;
+        height: 513px;
+        right: 46px;
+        top: 291px;
+    }
+}
+
 @media (max-width: 768px) {
     .search-file__item {
         margin-top: 0;
+    }
+
+    .email-monitor {
+        position: absolute;
+        width: 637px;
+        height: 468px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        top: 371px;
     }
 
     .email-container {
@@ -292,6 +329,16 @@
 
 
 @media (max-width: 480px) {
+    .email-monitor {
+        position: absolute;
+        width: 300px;
+        height: 250px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        top: 584px;
+    }
+
     .section3__title {
         margin-top: 20px;
     }
