@@ -139,12 +139,15 @@ $(document).ready(function() {
 			$('.section .js-data-content').removeClass('active');
 		},
 		afterLoad: function(anchorLink, index){
+			if (index === 3 && videoFirst) {
+				videoFirst.play();
+			}
 			$('.js-main-background .bg').removeClass('active slide-out-top slide-out-bottom slide-in-bottom slide-in-top new');
 			$('.js-main-background .bg').removeAttr('style');
 			$('.js-main-background .bg[js-data-id="' + index + '"]').addClass('active');
 			$('.section[js-data-id="' + index + '"] .js-data-content').addClass('active');
 		},
-		afterRender: function () {
+		afterRender: function () {			
 			if (ssd.fpRendered) return;
 			ssd.fpRendered = true;
 			$('.section[js-data-number]').each(function() {
@@ -218,3 +221,8 @@ $(window).on('resize', function(){
 $("body").on( 'scroll', function(){
   console.log('Event Fired');
 });
+
+$(document).ready(function(){
+	$('.home__android').on('click', function(){
+	})
+})

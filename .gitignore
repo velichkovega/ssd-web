@@ -14,11 +14,8 @@ results
 tmp
 coverage
 
-<<<<<<< HEAD
 # API keys
 
-=======
->>>>>>> ef5a72fb86dd9563174b9001e842041c813a8a4a
 # Dependency directory
 node_modules
 bower_components

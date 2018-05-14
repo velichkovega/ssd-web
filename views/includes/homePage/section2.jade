@@ -21,9 +21,8 @@
                         li
                           a.js-tabs-a(href='javascript:;', data-id='st5') Notes
                     .device-image
-                      video(width="100%")
-                        source(url="img/iOS_video.mov")
-                      img(src='files/ios_mobile_site/Folder@2x.jpg', alt='')
+                      video(Autoplay=autoplay id="videoFirst" preload  width="100%" loop muted)   
+                        source( src="img/iOS_video.mov" type="video/mp4")                     
                     .system-content
                       .system-body
                         .js-tabs-body(data-id='st1', style='display: block')
@@ -125,6 +124,9 @@
                     img(src='files/android_mob_site/Open Note@2x.jpg', alt='')
                 ul.device-app
                   li
-                    a.js-device-a.current(href='javascript:;', data-id='device1') iOS
+                    a.js-device-a.current.home__ios(href='javascript:;', data-id='device1') iOS
+                  .switch-app
+                    .switch-app__line
+                    .switch-app__point
                   li
-                    a.js-device-a(href='javascript:;', data-id='device2') Android
+                    a.js-device-a.home__android(href='javascript:;', data-id='device2') Android
