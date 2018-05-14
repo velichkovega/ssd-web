@@ -44,6 +44,8 @@
 }
 
 .wrap-list {
+    position: relative;
+    z-index: 99;
     display: flex;
 }
 
@@ -229,6 +231,14 @@
     top: 85px;
 }
 
+.section3-monitor {
+    position: absolute;
+    width: 962px;
+    height: 770px;
+    right: 148px;
+    top: 255px;
+}
+
 
 @media (max-width: 1440px) {
     .email-monitor {
@@ -237,6 +247,14 @@
         height: 670px;
         right: 0;
         top: 158px;
+    }
+
+    .section3-monitor {
+        position: absolute;
+        width: 862px;
+        height: 670px;
+        right: 26px;
+        top: 376px;
     }
 
     .search-file {
@@ -260,6 +278,14 @@
         right: 46px;
         top: 291px;
     }
+
+    .section3-monitor {
+        position: absolute;
+        width: 621px;
+        height: 488px;
+        right: -5px;
+        top: 510px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -275,6 +301,19 @@
         left: 0;
         margin: 0 auto;
         top: 371px;
+    }
+
+    .section3-email {
+        padding-bottom: 500px;
+    }
+
+    .section3-monitor {
+        width: 621px;
+        height: 488px;
+        right: 0;
+        left: 0;
+        margin: 0 auto;
+        top: 798px;
     }
 
     .email-container {
@@ -339,6 +378,16 @@
         top: 584px;
     }
 
+    .section3-monitor {
+        position: absolute;
+        width: 300px;
+        height: 250px;
+        right: 0;
+        left: 0;
+        top: 1290px;
+        margin: 0 auto;
+    }
+
     .section3__title {
         margin-top: 20px;
     }
@@ -350,6 +399,7 @@
     .email-container {
         margin-top: 20px;
         padding: 0;
+        padding-bottom: 300px;
         display: flex;
         justify-content: center;
         align-items: center;
