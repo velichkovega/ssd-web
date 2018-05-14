@@ -127,6 +127,7 @@ $(document).ready(function() {
 		scrollOverflow: true,
 		scrollingSpeed: 1000,
 		onLeave: function(index, nextIndex, direction){
+      $('.scroll').hide();
 			ssd.fullpageState = nextIndex;
 			sectionList();
 			var lastTransform = $('.js-main-background .bg[js-data-id="' + index + '"]').css('transform');
@@ -212,4 +213,8 @@ $(window).on('resize', function(){
 	if ($(".team-slider").length) {
 		teamSlider();
 	}
+});
+
+$("body").on( 'scroll', function(){
+  console.log('Event Fired');
 });
