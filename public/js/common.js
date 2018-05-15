@@ -224,5 +224,12 @@ $("body").on( 'scroll', function(){
 
 $(document).ready(function(){
 	$('.home__android').on('click', function(){
+		$('.sitch__point').addClass('sitch__point_android');
+		$('.sitch__point').removeClass('sitch__point');
+		
+	});
+	$('.home__ios').on('click',function() {
+		$('.sitch__point_android').addClass('sitch__point');
+		$('.sitch__point_android').removeClass('sitch__point_android');
 	})
 })

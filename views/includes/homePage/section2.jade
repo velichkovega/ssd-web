@@ -121,12 +121,13 @@
                               | Set an expiration timer for your emails so they will be automatically deleted from your and your recipient’s mailboxes after a certain time
                             li Switch between multiple email addresses within one mailbox (in development)
                   .device-image
-                    img(src='files/android_mob_site/Open Note@2x.jpg', alt='')
+                    video(Autoplay=autoplay id="videoSecond" preload  width="100%" loop muted)   
+                      source( src="img/inbox_mobile.mov" type="video/mp4")  
                 ul.device-app
                   li
                     a.js-device-a.current.home__ios(href='javascript:;', data-id='device1') iOS
-                  .switch-app
-                    .switch-app__line
-                    .switch-app__point
+                  li.device-app__switch
+                    .switch__line
+                    .sitch__point
                   li
                     a.js-device-a.home__android(href='javascript:;', data-id='device2') Android
