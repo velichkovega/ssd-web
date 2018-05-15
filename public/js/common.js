@@ -139,7 +139,7 @@ $(document).ready(function() {
 			$('.section .js-data-content').removeClass('active');
 		},
 		afterLoad: function(anchorLink, index){
-			if (index === 3 && videoFirst) {
+			if (index === 3 && document.getElementById('videoFirst')) {
 				videoFirst.play();
 			}
 			$('.js-main-background .bg').removeClass('active slide-out-top slide-out-bottom slide-in-bottom slide-in-top new');
